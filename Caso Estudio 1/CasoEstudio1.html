@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caso Estudio</title>
+    <link rel="stylesheet" href="CasoEstudio1.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <div class="wave-container">
+                <h1 class="wave-text">
+                    <span>Sistema </span><span> de </span><span> Registro </span><span> de </span><span> Estudiantes
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="formulario">
+                <form method="post" id="formEstudiantes">
+                    <label>
+                        Nombre del estudiante:
+                    </label>
+                    <input type="text" id="nombre">
+                    <br>
+                    <br>
+                    <label>
+                        Apellidos del estudiante:
+                    </label>
+                    <input type="text" id="apellidos">
+                    <br>
+                    <br>
+                    <label>
+                        Nota del estudiante:
+                    </label>
+                    <input type="number" min="0" max="100" placeholder="0-100" required id="nota">
+                    <br>
+                    <br>
+                    <button type="submit" class="agregar"> Agregar </button>
+                    <button type="reset" class="borrar" role="button"> Borrar </button>
+                    <br>
+                    <br>
+                    <br>
+
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <table id="tablaEstudiantes">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaEstudiantes">
+                    <tr>
+                        <td>Maria</td>
+                        <td>Mora Perez</td>
+                        <td class="nota-alta">90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Sibaja Lopez</td>
+                        <td class="nota-baja">60</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marco</td>
+                        <td>Rojas Castro</td>
+                        <td>78</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <div class="tablaPromedio">
+                <h2>Resumen de notas</h2>
+                <p> Estudiante: <span id="estudianteMayor" class="resultado">-</span></p>
+                <p>Nota mas alta del estudiante: <span id="notaMayor" class="resultado">-</span></p>
+                <p>Promedio de todas las notas: <span id="promedioNotas" class="resultado">-</span></p>
+                <p>Nota mas baja: <span id="notaMenor" class="resultado">-</span></p>
+            </div>
+        </section>
+    </main>
+
+    <div id="mensaje">
+        <div class="cuadro-mensaje">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO2Yy07DMBBF8yksiHiIHbXdXYUd+P8/YAGitN30xkEsQZaChAKJnHTsTKq5Uraec2QnnkxRSCQSiUQSmdrqW1SmLBLluFlfhhpJFq+f7q+91W/e6W1dmRvq9VGZ0jv12li184+ruyTwjdNf4aGWwA98uz6pRBeeWgJdeGqJz4258E49/ylAIIE+eOpdTiGRDT6FRHZ4SonZ4CkkZoc/RYIN/BQJdvBjJNjCx0g0Tu8bp97ZwkdK8IYfK8ES/rdE3XPeW/gDW/iQ8MJ+WL0d2AG+Ahj42rA/QoiEZymBIXir9wGWrQQiLqnwn+udemEngRE3LDsJTGgP2EjghN5mdgkQNGatRP7mDoRdZfYOFQkKZpNAwkLIIYGH1dWiB1v/SSxqtNiVWORwN9d4HZUpk43XJRKJRHKW+QaUqwzfL9sYYwAAAABJRU5ErkJggg=="
+                alt="delete-sign--v1">
+            <h2> ¡Atención!</h2>
+            <p id="textoMensaje">Por favor, complete todos los campos.</p>
+            <button type="button" onclick="cerrarMensaje()">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="casoEstudio1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+/* Tomado de https://finisher.co/lab/header/
+Tomado de https://backgrounds-css.netlify.app/
+Tomado de https://cssgradient.io/
+Tomado de https://iconos8.es/icons/set/popular-icons
+Tomado de https://www-css--buttons-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+Tomado de https://getcssscan.com/css-buttons-examples
+Tomado de https://prismic.io/blog/css-text-animations */
+
+body {
+      background: linear-gradient(to top, #30cfd0 0%, #5d16b4 100%); background-attachment: fixed; 
+
+
+    background: linear-gradient(to top, #30cfd0 0%, #5d16b4 100%);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Partículas decorativas */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    background-image:
+        radial-gradient(circle, #ffffff 2px, transparent 3px),
+        radial-gradient(circle, #87ddfe 3px, transparent 4px),
+        radial-gradient(circle, #acaaff 2px, transparent 3px),
+        radial-gradient(circle, #1bffc2 2px, transparent 3px),
+        radial-gradient(circle, #f88aff 3px, transparent 4px);
+
+    background-size:
+        110px 130px,
+        170px 190px,
+        220px 160px,
+        260px 230px,
+        190px 270px;
+
+    background-position:
+        10px 20px,
+        50px 80px,
+        100px 30px,
+        30px 140px,
+        130px 100px;
+
+    animation: moverParticulas 20s linear infinite;
+}
+
+@keyframes moverParticulas {
+    from {
+        background-position:
+            10px 20px,
+            50px 80px,
+            100px 30px,
+            30px 140px,
+            130px 100px;
+    }
+
+    to {
+        background-position:
+            120px 150px,
+            220px 270px,
+            320px 190px,
+            290px 370px,
+            330px 350px;
+    }
+}
+
+ .titulo{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin: 10px;
+    word-spacing: 15px;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+    word-spacing: 10px;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+
+
+h1{
+    Color:white;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    word-spacing: 15px;
+ }}/* body */
+
+.formulario{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin: 10px auto;
+    font-size: 18px;
+    width: 200px;
+    min-height: 180px;
+
+}
+.agregar {
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat,sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.agregar:hover {
+  background-image: linear-gradient(#020538, #1b24a1);
+}
+
+.agregar:active {
+  background-image: linear-gradient(#0a045e, #033f58);
+  transform: scale(0.98);
+} 
+
+.borrar {
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat,sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.borrar:hover {
+  background-image: linear-gradient(#020538, #1b24a1);
+}
+
+.borrar:active {
+  background-image: linear-gradient(#0a045e, #033f58);
+  transform: scale(0.98);
+}
+
+table{
+    color: white;
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.15);
+    border:2px solid white;
+    border-radius: 10px;
+
+}
+table th{
+    background-color: #0033A0;
+    color:white;
+    padding: 15px;
+    border: 1px solid white;
+    font-size: 18px;
+    text-align: center;
+}
+table td{
+    padding:12px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 17px;
+}
+table tbody tr:hover{
+    background-color: rgba(255,255,255, 0.25);
+}
+
+.tablaPromedio{
+     color: white;
+    text-align:left;
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 25px;
+    margin: 10px auto;
+    font-size: 18px;
+    width: 250px;
+    min-height: 150px;
+
+}
+
+#mensaje{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cuadro-mensaje{
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+}
+
+.imagen-mensaje{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+}
+
+.resultado{
+    color: #FFE66D;
+    font-weight: bold;
+}
+
+.nota-alta{
+    color: #32CD32;
+    font-weight: bold;
+}
+
+.nota-baja{
+    color: #ff4d4d;
+    font-weight: bold;
+}
